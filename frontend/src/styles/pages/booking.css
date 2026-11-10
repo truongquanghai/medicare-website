@@ -1,0 +1,105 @@
+.booking-layout {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  align-items: start;
+  gap: 24px;
+}
+
+.slot-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(76px, 1fr));
+  gap: 8px;
+}
+
+.slot {
+  padding: 9px 0;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.slot:hover:not(:disabled) {
+  border-color: var(--brand);
+  color: var(--brand);
+}
+
+.slot:disabled {
+  background: var(--surface-soft);
+  color: var(--text-muted);
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.slot--selected,
+.slot--selected:hover:not(:disabled) {
+  border-color: var(--brand);
+  background: var(--brand);
+  color: #fff;
+}
+
+.booking-summary {
+  display: grid;
+  gap: 14px;
+}
+
+.summary-doctor {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.summary-doctor small {
+  display: block;
+  color: var(--text-muted);
+}
+
+.mini-avatar {
+  width: 44px;
+  height: 44px;
+}
+
+.summary-line,
+.summary-total {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 14px;
+}
+
+.summary-line span {
+  color: var(--text-muted);
+}
+
+.summary-total {
+  padding-top: 14px;
+  border-top: 1px solid var(--border);
+  font-size: 16px;
+}
+
+.summary-total b {
+  color: var(--brand);
+}
+
+.success-card {
+  display: grid;
+  justify-items: center;
+  gap: 12px;
+  max-width: 520px;
+  margin: 24px auto;
+  padding: 40px 24px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+
+.success-card svg {
+  color: var(--accent);
+}
+
+.success-card p {
+  color: var(--text-muted);
+}

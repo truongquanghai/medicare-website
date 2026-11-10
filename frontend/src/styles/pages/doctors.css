@@ -1,0 +1,87 @@
+.detail-header {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 28px;
+  margin-bottom: 24px;
+  padding: 24px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.detail-photo {
+  height: 220px;
+  border-radius: var(--radius);
+}
+
+.detail-copy {
+  display: grid;
+  align-content: center;
+  gap: 10px;
+}
+
+.detail-copy h1 {
+  font-size: 28px;
+}
+
+.detail-copy > p {
+  color: var(--text-muted);
+}
+
+.meta-list {
+  display: grid;
+  gap: 6px;
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.meta-list span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.detail-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.detail-panel {
+  margin-bottom: 20px;
+}
+
+.detail-panel p {
+  color: var(--text-muted);
+}
+
+.detail-panel li {
+  padding: 4px 0;
+  color: var(--text-muted);
+}
+
+.detail-panel li::before {
+  content: '•';
+  margin-right: 8px;
+  color: var(--brand);
+}
+
+.detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.detail-bottom-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 18px 24px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--brand-soft);
+  color: var(--text-strong);
+}
